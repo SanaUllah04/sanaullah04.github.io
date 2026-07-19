@@ -1,1359 +1,1919 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <noscript>
-        <style>
-            .reveal {
-                opacity: 1 !important;
-                transform: none !important;
-            }
-        </style>
+      <style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
     </noscript>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SanaUllah | Portfolio</title>
-    <meta name="description"
-        content="Graduate of Bachelor in Computer Science from NUCES-FAST Peshawar. Quantum Computing Enthusiast, Full-Stack Developer, DevOps & Cloud Explorer, and Game Developer Hobbyist. View projects, experience, and certificates." />
+    <meta
+      name="description"
+      content="Graduate of Bachelor in Computer Science from NUCES-FAST Peshawar. Quantum Computing Enthusiast, Full-Stack Developer, DevOps & Cloud Explorer, and Game Developer Hobbyist. View projects, experience, and certificates."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/css/portfolio.css" />
-</head>
+  </head>
 
-
-
-
-
-
-
-<body>
-
-    
-    <!-- Cursor Spotlight -->
-    <div id="cursor-spotlight"></div>
-
+  <body>
     <!-- ========== NAVBAR ========== -->
     <header id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">&lt;SanaUllah /&gt;</a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <nav class="nav-links" id="nav-links">
-                <a href="#about" class="nav-item">About</a>
-                <a href="#skills" class="nav-item">Skills</a>
-                <a href="#projects" class="nav-item">Projects</a>
-                <a href="#experience" class="nav-item">Experience</a>
-                <a href="#certificates" class="nav-item">Certs</a>
-                <a href="#highlights" class="nav-item">Highlights</a>
-                <a href="#contact" class="nav-item btn-resume">Contact</a>
-            </nav>
-        </div>
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">SanaUllah</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+          <a href="#about" class="nav-item">About</a>
+          <a href="#skills" class="nav-item">Skills</a>
+          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#experience" class="nav-item">Experience</a>
+          <a href="#certificates" class="nav-item">Certs</a>
+          <a href="#highlights" class="nav-item">Highlights</a>
+          <a href="#contact" class="nav-item btn-resume">Contact</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          <i class="fas fa-sun icon-sun"></i>
+          <i class="fas fa-moon icon-moon"></i>
+        </button>
+      </div>
     </header>
+
+    <script src="assets/js/gsap.min.js"></script>
 
     <!-- ========== HERO ========== -->
     <section id="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-content">
-            <div class="hero-avatar-wrap">
-                <img src="images/Home/mine.PNG" alt="SanaUllah" id="hero-avatar" />
-                <div class="avatar-ring"></div>
-                <div class="avatar-ring-2"></div>
-                <div class="avatar-ring-3"></div>
-            </div>
-            <div class="hero-text">
-                <p class="hero-greeting">👋 Hello, I'm</p>
-                <h1 class="hero-name">SanaUllah</h1>
-                <div class="hero-typed-wrap">
-                    <span class="hero-typed" id="typed-text"></span><span class="cursor">|</span>
-                </div>
-                <p class="hero-sub">Graduate of Bachelor in Computer Science from <br> <span
-                        class="accent">NUCES-FAST</span></p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="https://drive.google.com/file/d/1lS1LLoqzd4Jv23dRztq7Y6I-RjGYOqMo/view" target="_blank"
-                        class="btn btn-outline">
-                        <i class="fa fa-download"></i> Resume
-                    </a>
-                    <a href="https://drive.google.com/file/d/1QUMjG0ZGREBOOjzZJ-EPeZZR1xDverjm/view" target="_blank"
-                        class="btn btn-outline">
-                        <i class="fa fa-file-alt"></i> CV
-                    </a>
-                </div>
-                <div class="hero-socials">
-                    <a href="https://github.com/SanaUllah04" target="_blank" aria-label="GitHub"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sana-ullah-389532226/" target="_blank" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://x.com/MrWarden04" target="_blank" aria-label="Twitter"><i
-                            class="fab fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/sanaullah.here/" target="_blank" aria-label="Instagram"><i
-                            class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+      <div class="hero-content">
+        <div class="hero-avatar-wrap">
+          <img src="images/Home/mine.PNG" alt="SanaUllah" id="hero-avatar" />
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring-2"></div>
+          <div class="avatar-ring-3"></div>
         </div>
-        <a href="#about" class="scroll-indicator"><i class="fas fa-chevron-down"></i></a>
+        <div class="hero-text">
+          <p class="hero-greeting">👋 Hello, I'm</p>
+          <h1 class="hero-name">SanaUllah</h1>
+          <div class="hero-typed-wrap">
+            <span class="hero-typed" id="typed-text"></span
+            ><span class="cursor">|</span>
+          </div>
+          <p class="hero-sub">
+            Graduate of Bachelor in Computer Science from <br />
+            <span class="accent">NUCES-FAST</span>
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a
+              href="https://drive.google.com/file/d/1lS1LLoqzd4Jv23dRztq7Y6I-RjGYOqMo/view"
+              target="_blank"
+              class="btn btn-outline"
+            >
+              <i class="fa fa-download"></i> Resume
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1QUMjG0ZGREBOOjzZJ-EPeZZR1xDverjm/view"
+              target="_blank"
+              class="btn btn-outline"
+            >
+              <i class="fa fa-file-alt"></i> CV
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://github.com/SanaUllah04"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/sana-ullah-389532226/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://x.com/MrWarden04"
+              target="_blank"
+              aria-label="Twitter"
+              ><i class="fab fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/sanaullah.here/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator"
+        ><i class="fas fa-chevron-down"></i
+      ></a>
     </section>
 
     <!-- ========== ABOUT ========== -->
     <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
 
-            <div class="about-grid">
-                <div class="about-text">
-                    <h3>My Techventure</h3>
-                    <p>
-                        Graduated with a Bachelor's degree in Computer Science from FAST, National University of
-                        Computer and Emerging Sciences,
-                        specializing as a Full Stack AI Engineer with experience in DevOps, cloud technologies,
-                        and AI-driven systems. Actively building scalable, production-ready applications using
-                        modern cloud infrastructure and automation.
-                    </p>
-                    <p>
-                        I'm looking to grow as a Full Stack AI Engineer by building end-to-end AI-powered products,
-                        taking ideas from concept to deployment, and creating systems that people rely on every day.
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>My Techventure</h3>
+            <p>
+              Graduated with a Bachelor's degree in Computer Science from FAST,
+              National University of Computer and Emerging Sciences,
+              specializing as a Full Stack AI Engineer with experience in
+              DevOps, cloud technologies, and AI-driven systems. Actively
+              building scalable, production-ready applications using modern
+              cloud infrastructure and automation.
+            </p>
+            <p>
+              I'm looking to grow as a Full Stack AI Engineer by building
+              end-to-end AI-powered products, taking ideas from concept to
+              deployment, and creating systems that people rely on every day.
+            </p>
 
-                    </p>
-
-
-                    <div class="about-badges">
-                        <span class="badge"><i class="fas fa-map-marker-alt"></i> Peshawar, Pakistan</span>
-                        <span class="badge"><i class="fas fa-graduation-cap"></i> NU-FAST Peshawar</span>
-                        <span class="badge"><i class="fas fa-briefcase"></i> Open to Opportunities</span>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <span class="stat-num">15+</span>
-                        <span class="stat-label">Projects Built</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-num">10+</span>
-                        <span class="stat-label">Certificates</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-num">8+</span>
-                        <span class="stat-label">Roles & Internships</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-num">4</span>
-                        <span class="stat-label">Years of Learning</span>
-                    </div>
-                </div>
+            <div class="about-badges">
+              <span class="badge"
+                ><i class="fas fa-map-marker-alt"></i> Peshawar, Pakistan</span
+              >
+              <span class="badge"
+                ><i class="fas fa-graduation-cap"></i> NU-FAST Peshawar</span
+              >
+              <span class="badge"
+                ><i class="fas fa-briefcase"></i> Open to Opportunities</span
+              >
             </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">8+</span>
+              <span class="stat-label">Roles & Internships</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Years of Learning</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ========== SKILLS ========== -->
     <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4><i class="fas fa-code"></i> Languages</h4>
-                    <div class="skill-tags">
-                        <span>Python</span><span>C++</span><span>JavaScript</span>
-                        <span>TypeScript</span><span>SQL</span><span>HTML/CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4><i class="fas fa-layer-group"></i> Frameworks & Libs</h4>
-                    <div class="skill-tags">
-                        <span>React</span><span>Next.js</span><span>Django</span>
-                        <span>Node.js</span><span>FastAPI</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4><i class="fas fa-cloud"></i> DevOps & Cloud</h4>
-                    <div class="skill-tags">
-                        <span>Docker</span><span>GitHub Actions</span>
-                        <span>Vercel</span><span>Linux</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4><i class="fas fa-brain"></i> AI & ML</h4>
-                    <div class="skill-tags">
-                        <span>Hugging Face</span><span>LangChain</span>
-                        <span>TensorFlow</span><span>Vertex AI</span><span>RAG</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4><i class="fas fa-database"></i> Databases</h4>
-                    <div class="skill-tags">
-                        <span>MySQL</span><span>PostgreSQL</span>
-                        <span>MongoDB</span><span>Firebase</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4><i class="fas fa-tools"></i> Tools</h4>
-                    <div class="skill-tags">
-                        <span>Git</span><span>VS Code</span><span>Postman</span>
-                        <span>Unity</span><span>Figma</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4><i class="fas fa-code"></i> Languages</h4>
+            <div class="skill-tags">
+              <span>Python</span><span>C++</span><span>JavaScript</span>
+              <span>TypeScript</span><span>SQL</span><span>HTML/CSS</span>
             </div>
+          </div>
+          <div class="skill-category">
+            <h4><i class="fas fa-layer-group"></i> Frameworks & Libs</h4>
+            <div class="skill-tags">
+              <span>React</span><span>Next.js</span><span>Django</span>
+              <span>Node.js</span><span>FastAPI</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4><i class="fas fa-cloud"></i> DevOps & Cloud</h4>
+            <div class="skill-tags">
+              <span>Docker</span><span>GitHub Actions</span> <span>Vercel</span
+              ><span>Linux</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4><i class="fas fa-brain"></i> AI & ML</h4>
+            <div class="skill-tags">
+              <span>Hugging Face</span><span>LangChain</span>
+              <span>TensorFlow</span><span>Vertex AI</span><span>RAG</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4><i class="fas fa-database"></i> Databases</h4>
+            <div class="skill-tags">
+              <span>MySQL</span><span>PostgreSQL</span> <span>MongoDB</span
+              ><span>Firebase</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4><i class="fas fa-tools"></i> Tools</h4>
+            <div class="skill-tags">
+              <span>Git</span><span>VS Code</span><span>Postman</span>
+              <span>Unity</span><span>Figma</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ========== PROJECTS ========== -->
     <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
 
-            <div class="year-group">
-                <div class="year-label"><span>2026</span></div>
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2026/Ansible.png" alt="Ansible Cloud Computing" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Ansible-Cloud-Computing" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Ansible Cloud Computing</h3>
-                            <p>Automated cloud monitoring stack with Prometheus, Grafana, and Node Exporter deployed on
-                                Ubuntu EC2 instances.</p>
-                            <div class="project-tags"><span>Ansible</span><span>Prometheus</span><span>Grafana</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2026/Nexus.png" alt="Nexus" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Nexus" target="_blank" class="overlay-btn"><i
-                                        class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Nexus</h3>
-                            <p>Networking platform connecting ambitious entrepreneurs with forward-thinking investors
-                                through role-based dashboards and secure communication.</p>
-                            <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2026/Q-Academy.png" alt="Q-Academy" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Q-Academy" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Q-Academy</h3>
-                            <p>Quantum coding learning platform providing curated educational materials from theoretical
-                                concepts to practical implementation for beginners.</p>
-                            <div class="project-tags"><span>Quantum</span><span>Next.js</span><span>TypeScript</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2026/SignLang (2).png" alt="SignLang - PSL Learning Platform"
-                                loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SignLang-FYP/SignLang" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>SignLang - PSL Learning Platform</h3>
-                            <p>Interactive platform for learning Pakistan Sign Language with real-time CNN evaluation,
-                                feedback, and community support for deaf users.</p>
-                            <div class="project-tags"><span>Next.js</span><span>CNN</span><span>Supabase</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2026/E-Commerce.png" alt="Full-Stack E-Commerce Store"
-                                loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/E-Commerce" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Full-Stack E-Commerce Store</h3>
-                            <p>Complete e-commerce application featuring storefront, admin dashboard, authentication,
-                                and product management with modern tech stack.</p>
-                            <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2026/sticky_notes.PNG" alt="Sticky Notes Django Application"
-                                loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Web-Technologies/tree/main/Sticky%20Notes"
-                                    target="_blank" class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Sticky Notes Django Application</h3>
-                            <p>Full-stack CRUD application for managing personal notes with interactive interface and
-                                persistent SQLite database storage.</p>
-                            <div class="project-tags"><span>Django</span><span>Python</span><span>SQLite</span></div>
-                        </div>
-                    </div>
-
+        <div class="year-group">
+          <div class="year-label"><span>2026</span></div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2026/Ansible.png"
+                  alt="Ansible Cloud Computing"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Ansible-Cloud-Computing"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
                 </div>
+              </div>
+              <div class="project-info">
+                <h3>Ansible Cloud Computing</h3>
+                <p>
+                  Automated cloud monitoring stack with Prometheus, Grafana, and
+                  Node Exporter deployed on Ubuntu EC2 instances.
+                </p>
+                <div class="project-tags">
+                  <span>Ansible</span><span>Prometheus</span
+                  ><span>Grafana</span>
+                </div>
+              </div>
             </div>
 
-            <div class="year-group">
-                <div class="year-label"><span>2025</span></div>
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/DID_provider.png" alt="Decentralized Identity Provider"
-                                loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/did-provider-vercel" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Decentralized Identity Provider</h3>
-                            <p>Web application for decentralized identity management deployed on Vercel.</p>
-                            <div class="project-tags"><span>Web3</span><span>Next.js</span><span>Vercel</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/recipe-generator.png" alt="Recipe Generator"
-                                loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Recipe-Generator" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Recipe Generator</h3>
-                            <p>AI-powered web application that generates recipes based on user preferences.</p>
-                            <div class="project-tags"><span>AI</span><span>Web App</span><span>Python</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/blog.png" alt="Blog Summarizer" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/blog-summarizer" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Blog Summarizer</h3>
-                            <p>AI-driven web app to automatically summarize blog posts using NLP.</p>
-                            <div class="project-tags"><span>NLP</span><span>AI</span><span>Web App</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/quote.png" alt="Quote Generator" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Quote-Generator-Web-App" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Quote Generator Web App</h3>
-                            <p>Dynamic quote generator web application with clean modern UI.</p>
-                            <div class="project-tags"><span>JavaScript</span><span>Web App</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/TTS_Webpage.png" alt="Text-to-Speech" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Text-To-Speech-Service/tree/main"
-                                    target="_blank" class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Text-to-Speech Web App</h3>
-                            <p>Browser-based TTS service converting written text into natural speech.</p>
-                            <div class="project-tags"><span>TTS</span><span>API</span><span>Web App</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/horror.PNG" alt="3D Horror Game" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://www.linkedin.com/posts/sanaullah-cs_gamedev-indiegamedev-horrorgame-activity-7316829281345593344-KCcL"
-                                    target="_blank" class="overlay-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>3D Psychological Horror Game</h3>
-                            <p>Immersive 3D horror game built in Unity with atmospheric gameplay.</p>
-                            <div class="project-tags"><span>Unity</span><span>C#</span><span>3D</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/Laptop_Predictor.png" alt="Laptop Price Predictor"
-                                loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Semester_Projects/tree/main/Interactive%20Laptop%20Predictor%20using%20FNN"
-                                    target="_blank" class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Laptop Price Predictor</h3>
-                            <p>Interactive price prediction using a Feedforward Neural Network (FNN).</p>
-                            <div class="project-tags"><span>ML</span><span>FNN</span><span>Python</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/E-Commerce.png" alt="E-Commerce Dockerized" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Semester_Projects/tree/main/E-Commerce%20Dockerized%20Website"
-                                    target="_blank" class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>E-Commerce Dockerized Website</h3>
-                            <p>Fully containerized e-commerce platform using Docker microservices.</p>
-                            <div class="project-tags"><span>Docker</span><span>DevOps</span><span>Web</span></div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2025/AI research.PNG" alt="AI Research Paper" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="http://dx.doi.org/10.13140/RG.2.2.22703.65443" target="_blank"
-                                    class="overlay-btn"><i class="fas fa-external-link-alt"></i> Paper</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>AI Research: AI vs Humans in Video Games</h3>
-                            <p>Published research paper comparing AI and human performance in video games.</p>
-                            <div class="project-tags"><span>Research</span><span>AI</span><span>Published</span></div>
-                        </div>
-                    </div>
-
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2026/Nexus.png"
+                  alt="Nexus"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Nexus"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
                 </div>
+              </div>
+              <div class="project-info">
+                <h3>Nexus</h3>
+                <p>
+                  Networking platform connecting ambitious entrepreneurs with
+                  forward-thinking investors through role-based dashboards and
+                  secure communication.
+                </p>
+                <div class="project-tags">
+                  <span>React</span><span>Node.js</span><span>MongoDB</span>
+                </div>
+              </div>
             </div>
 
-            <div class="year-group">
-                <div class="year-label"><span>2024</span></div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2024/Calculator_Image.PNG" alt="Calculator with MySQL"
-                                loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/Calculator-with-Mysql-DataBase" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Calculator with MySQL Database</h3>
-                            <p>Feature-rich calculator that logs all computations to a MySQL database.</p>
-                            <div class="project-tags"><span>Python</span><span>MySQL</span></div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2024/Todolist.PNG" alt="ToDoList App" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/ToDoList-App-with-Python" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>ToDoList Application with Python</h3>
-                            <p>Clean task management application built with Python and persistent storage.</p>
-                            <div class="project-tags"><span>Python</span><span>App</span></div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2024/music_predictor.PNG" alt="Music Predictor" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://github.com/SanaUllah04/DataScience-With-Python" target="_blank"
-                                    class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Music Predictor with Python</h3>
-                            <p>Data science project predicting music genres using machine learning.</p>
-                            <div class="project-tags"><span>Data Science</span><span>ML</span><span>Python</span></div>
-                        </div>
-                    </div>
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2026/Q-Academy.png"
+                  alt="Q-Academy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Q-Academy"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
                 </div>
+              </div>
+              <div class="project-info">
+                <h3>Q-Academy</h3>
+                <p>
+                  Quantum coding learning platform providing curated educational
+                  materials from theoretical concepts to practical
+                  implementation for beginners.
+                </p>
+                <div class="project-tags">
+                  <span>Quantum</span><span>Next.js</span
+                  ><span>TypeScript</span>
+                </div>
+              </div>
             </div>
 
-            <div class="year-group">
-                <div class="year-label"><span>2023</span></div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="images/Projects/2023/Game.PNG" alt="2D Game with Unity" loading="lazy" />
-                            <div class="project-overlay">
-                                <a href="https://www.linkedin.com/posts/sanaullah-cs_project-animation-programming-activity-7058046977757843457-pSZN"
-                                    target="_blank" class="overlay-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>2D Game with Unity</h3>
-                            <p>A 2D platformer game developed from scratch using Unity game engine.</p>
-                            <div class="project-tags"><span>Unity</span><span>C#</span><span>2D</span></div>
-                        </div>
-                    </div>
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2026/SignLang (2).png"
+                  alt="SignLang - PSL Learning Platform"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SignLang-FYP/SignLang"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
                 </div>
+              </div>
+              <div class="project-info">
+                <h3>SignLang - PSL Learning Platform</h3>
+                <p>
+                  Interactive platform for learning Pakistan Sign Language with
+                  real-time CNN evaluation, feedback, and community support for
+                  deaf users.
+                </p>
+                <div class="project-tags">
+                  <span>Next.js</span><span>CNN</span><span>Supabase</span>
+                </div>
+              </div>
             </div>
 
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2026/E-Commerce.png"
+                  alt="Full-Stack E-Commerce Store"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/E-Commerce"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Full-Stack E-Commerce Store</h3>
+                <p>
+                  Complete e-commerce application featuring storefront, admin
+                  dashboard, authentication, and product management with modern
+                  tech stack.
+                </p>
+                <div class="project-tags">
+                  <span>Next.js</span><span>TypeScript</span
+                  ><span>Tailwind</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2026/sticky_notes.PNG"
+                  alt="Sticky Notes Django Application"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Web-Technologies/tree/main/Sticky%20Notes"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Sticky Notes Django Application</h3>
+                <p>
+                  Full-stack CRUD application for managing personal notes with
+                  interactive interface and persistent SQLite database storage.
+                </p>
+                <div class="project-tags">
+                  <span>Django</span><span>Python</span><span>SQLite</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="year-group">
+          <div class="year-label"><span>2025</span></div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/DID_provider.png"
+                  alt="Decentralized Identity Provider"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/did-provider-vercel"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Decentralized Identity Provider</h3>
+                <p>
+                  Web application for decentralized identity management deployed
+                  on Vercel.
+                </p>
+                <div class="project-tags">
+                  <span>Web3</span><span>Next.js</span><span>Vercel</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/recipe-generator.png"
+                  alt="Recipe Generator"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Recipe-Generator"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Recipe Generator</h3>
+                <p>
+                  AI-powered web application that generates recipes based on
+                  user preferences.
+                </p>
+                <div class="project-tags">
+                  <span>AI</span><span>Web App</span><span>Python</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/blog.png"
+                  alt="Blog Summarizer"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/blog-summarizer"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Blog Summarizer</h3>
+                <p>
+                  AI-driven web app to automatically summarize blog posts using
+                  NLP.
+                </p>
+                <div class="project-tags">
+                  <span>NLP</span><span>AI</span><span>Web App</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/quote.png"
+                  alt="Quote Generator"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Quote-Generator-Web-App"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Quote Generator Web App</h3>
+                <p>
+                  Dynamic quote generator web application with clean modern UI.
+                </p>
+                <div class="project-tags">
+                  <span>JavaScript</span><span>Web App</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/TTS_Webpage.png"
+                  alt="Text-to-Speech"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Text-To-Speech-Service/tree/main"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Text-to-Speech Web App</h3>
+                <p>
+                  Browser-based TTS service converting written text into natural
+                  speech.
+                </p>
+                <div class="project-tags">
+                  <span>TTS</span><span>API</span><span>Web App</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/horror.PNG"
+                  alt="3D Horror Game"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://www.linkedin.com/posts/sanaullah-cs_gamedev-indiegamedev-horrorgame-activity-7316829281345593344-KCcL"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-linkedin"></i> LinkedIn</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>3D Psychological Horror Game</h3>
+                <p>
+                  Immersive 3D horror game built in Unity with atmospheric
+                  gameplay.
+                </p>
+                <div class="project-tags">
+                  <span>Unity</span><span>C#</span><span>3D</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/Laptop_Predictor.png"
+                  alt="Laptop Price Predictor"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Semester_Projects/tree/main/Interactive%20Laptop%20Predictor%20using%20FNN"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Laptop Price Predictor</h3>
+                <p>
+                  Interactive price prediction using a Feedforward Neural
+                  Network (FNN).
+                </p>
+                <div class="project-tags">
+                  <span>ML</span><span>FNN</span><span>Python</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/E-Commerce.png"
+                  alt="E-Commerce Dockerized"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Semester_Projects/tree/main/E-Commerce%20Dockerized%20Website"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>E-Commerce Dockerized Website</h3>
+                <p>
+                  Fully containerized e-commerce platform using Docker
+                  microservices.
+                </p>
+                <div class="project-tags">
+                  <span>Docker</span><span>DevOps</span><span>Web</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2025/AI research.PNG"
+                  alt="AI Research Paper"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="http://dx.doi.org/10.13140/RG.2.2.22703.65443"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fas fa-external-link-alt"></i> Paper</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>AI Research: AI vs Humans in Video Games</h3>
+                <p>
+                  Published research paper comparing AI and human performance in
+                  video games.
+                </p>
+                <div class="project-tags">
+                  <span>Research</span><span>AI</span><span>Published</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-group">
+          <div class="year-label"><span>2024</span></div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2024/Calculator_Image.PNG"
+                  alt="Calculator with MySQL"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/Calculator-with-Mysql-DataBase"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Calculator with MySQL Database</h3>
+                <p>
+                  Feature-rich calculator that logs all computations to a MySQL
+                  database.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span><span>MySQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2024/Todolist.PNG"
+                  alt="ToDoList App"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/ToDoList-App-with-Python"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>ToDoList Application with Python</h3>
+                <p>
+                  Clean task management application built with Python and
+                  persistent storage.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span><span>App</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2024/music_predictor.PNG"
+                  alt="Music Predictor"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SanaUllah04/DataScience-With-Python"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Music Predictor with Python</h3>
+                <p>
+                  Data science project predicting music genres using machine
+                  learning.
+                </p>
+                <div class="project-tags">
+                  <span>Data Science</span><span>ML</span><span>Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-group">
+          <div class="year-label"><span>2023</span></div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img
+                  src="images/Projects/2023/Game.PNG"
+                  alt="2D Game with Unity"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://www.linkedin.com/posts/sanaullah-cs_project-animation-programming-activity-7058046977757843457-pSZN"
+                    target="_blank"
+                    class="overlay-btn"
+                    ><i class="fab fa-linkedin"></i> LinkedIn</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>2D Game with Unity</h3>
+                <p>
+                  A 2D platformer game developed from scratch using Unity game
+                  engine.
+                </p>
+                <div class="project-tags">
+                  <span>Unity</span><span>C#</span><span>2D</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ========== EXPERIENCE ========== -->
     <section id="experience" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
 
-            <div class="exp-snake">
+        <div class="exp-snake">
+          <!-- Row 1 : R → L -->
 
-                <!-- Row 1 : R → L -->
-
-                <div class="exp-row exp-row-reverse">
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/Offer letter AI GenMat-1.png"
-                                alt="Cloudlem Certificate" loading="lazy" /></div>
-                        <div class="exp-card-body">
-                            <h3>Full Stack Developer Intern</h3>
-                            <a href="https://www.linkedin.com/company/aigenmat/posts/?feedView=all" target="_blank"
-                                class="exp-company">AI GenMat</a>
-                            <span class="exp-date">June 2025 – Present</span>
-                        </div>
-                    </div>
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/PakTron.jpg" alt="CBO AFA"
-                                loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>PKTron Quantum Ambassador</h3>
-                            <a href="https://www.linkedin.com/posts/sanaullah-cs_i-am-honored-to-share-that-i-have-officially-activity-7452219145837936640-qgWY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADis3pkBUCzUGEFSJq6bqVnxQ9-A6F0PqfA"
-                                target="_blank" class="exp-company">PakTron - AI Powered Quantum Simulator</a>
-                            <span class="exp-date">April 2026 – Present</span>
-                        </div>
-                    </div>
-
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb exp-thumb-duo"><img src="images/Experience/Ambassador Card.jpeg"
-                                alt="Notion Event Lead" loading="lazy" /><img
-                                src="images/Experience/Confirmation Email.jpg" alt="Build with Notion" loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>SOFTEC'26 Brand Ambassador</h3>
-                            <a href="https://www.linkedin.com/posts/sanaullah-cs_softec-wasnt-just-good-it-was-phenomenal-activity-7453886985703809024-Y1-j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADis3pkBUCzUGEFSJq6bqVnxQ9-A6F0PqfA"
-                                target="_blank" class="exp-company">FAST NUCES Lahore</a>
-                            <span class="exp-date">Jan 2026 – April 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="exp-connector exp-connector-left">
-                    <div class="exp-conn-dot"></div>
-                </div>
-
-
-                <!-- Row 2: L → R -->
-
-
-                <div class="exp-row">
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/DE_Ta.jpg" alt="DE TA" loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>TA – Differential Equations</h3>
-                            <a href="https://www.linkedin.com/in/ansar-rehman-2474a0354/" target="_blank"
-                                class="exp-company">Under Lect. Ansar Rehman</a>
-                            <span class="exp-date">Jan 2026 – Jun 2026</span>
-                        </div>
-                    </div>
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb exp-thumb-duo"><img
-                                src="images/Experience/DevelopersHub Offer Letter.jpg" alt="Notion Event Lead"
-                                loading="lazy" /><img src="images/Experience/COMPLETION CERTIFICATES.jpg"
-                                alt="Build with Notion" loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>Full-Stack Developer</h3>
-                            <a href="https://www.linkedin.com/company/developershub-corporation/posts/?feedView=all"
-                                target="_blank" class="exp-company">DevelopersHub Corporation</a>
-                            <span class="exp-date">Feb 2026 – March 2026</span>
-                        </div>
-                    </div>
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/CBO.jpg" alt="CBO AFA" loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>Chief Business Officer</h3>
-                            <a href="https://www.linkedin.com/posts/sanaullah-cs_im-proud-to-share-that-ive-officially-started-activity-7428162740562620416-CvIE"
-                                target="_blank" class="exp-company">AFA Innovations</a>
-                            <span class="exp-date">Jan 2026 – March 2026</span>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="exp-connector exp-connector-right">
-                    <div class="exp-conn-dot"></div>
-                </div>
-
-                <!-- Row 3: R → L -->
-                <div class="exp-row exp-row-reverse">
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/Cloudlem_Certificate.png"
-                                alt="Cloudlem Certificate" loading="lazy" /></div>
-                        <div class="exp-card-body">
-                            <h3>DevOps Intern</h3>
-                            <a href="https://www.linkedin.com/posts/sanaullah-cs_offer-letter-activity-7398650255518588928-ggCk"
-                                target="_blank" class="exp-company">Cloudlem Pvt. Ltd.</a>
-                            <span class="exp-date">Nov 2025 – Dec 2025</span>
-                        </div>
-                    </div>
-
-
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb exp-thumb-duo"><img src="images/Experience/Notion.PNG"
-                                alt="Notion Event Lead" loading="lazy" /><img
-                                src="images/Experience/Build with Notion.jpeg" alt="Build with Notion" loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>Event Management Lead</h3>
-                            <a href="https://www.instagram.com/p/DUIW5AKjXwp/" target="_blank"
-                                class="exp-company">Notion</a>
-                            <span class="exp-date">Nov 2025 – Jun 2026</span>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb exp-thumb-duo"><img src="images/Experience/Head Event Management.png"
-                                alt="Head Event Management" loading="lazy" /><img
-                                src="images/Experience/FCSS donation camp.png" alt="FCSS Donation Camp"
-                                loading="lazy" /></div>
-                        <div class="exp-card-body">
-                            <h3>Head of Event Management</h3>
-                            <a href="https://www.instagram.com/fast_community_service_pwr/p/DU3FNBYDIcP/"
-                                target="_blank" class="exp-company">FCSS</a>
-                            <span class="exp-date">Aug 2025 – Jun 2026</span>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="exp-connector exp-connector-left">
-                    <div class="exp-conn-dot"></div>
-                </div>
-
-                <!-- Row 4: L → R -->
-                <div class="exp-row">
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/ta.jpeg" alt="TA FAST" loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>Teaching Assistant</h3>
-                            <a href="https://www.linkedin.com/posts/sanaullah-cs_hamesha-der-kar-deta-huun-session-arrange-activity-7377756184000364544-eGPP"
-                                target="_blank" class="exp-company">FAST NUCES Peshawar</a>
-                            <span class="exp-date">Aug 2025 – Dec 2025</span>
-                        </div>
-                    </div>
-
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/nexium intern.jpeg"
-                                alt="Nexium Internship" loading="lazy" /></div>
-                        <div class="exp-card-body">
-                            <h3>AI Web Developer Intern</h3>
-                            <a href="https://www.linkedin.com/posts/sanaullah-cs_ai-webdevelopment-internshipcompletion-activity-7360919017664016385-m42W"
-                                target="_blank" class="exp-company">Nexium Ltd.</a>
-                            <span class="exp-date">Jul 2025 – Aug 2025</span>
-                        </div>
-                    </div>
-
-
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/fdo.jpg" alt="Front Desk Officer"
-                                loading="lazy" /></div>
-                        <div class="exp-card-body">
-                            <h3>Front Desk Officer</h3>
-                            <a href="https://www.linkedin.com/posts/arsalanmateen_i-still-remember-july-24-the-day-after-nu-ugcPost-7396571202061762560-E93D"
-                                target="_blank" class="exp-company">FAST NUCES Peshawar</a>
-                            <span class="exp-date">Jun 2025 – Aug 2025</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="exp-connector exp-connector-right">
-                    <div class="exp-conn-dot"></div>
-                </div>
-
-                <!-- Row 5: R → L -->
-                <div class="exp-row exp-row-reverse">
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/TA SHIP LETTER 5 SEM.jpg"
-                                alt="TA Letter" loading="lazy" /></div>
-                        <div class="exp-card-body">
-                            <h3>Teacher's Assistant – OS</h3>
-                            <a href="https://www.linkedin.com/posts/sanaullah-cs_teachingassistant-operatingsystems-computerscience-activity-7237493571644207105-xmF2"
-                                target="_blank" class="exp-company">FAST NUCES Peshawar</a>
-                            <span class="exp-date">Aug 2024 – Dec 2024</span>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-thumb exp-thumb-duo"><img src="images/Experience/1.jpeg" alt="MindStorm 1"
-                                loading="lazy" /><img src="images/Experience/2.jpeg" alt="MindStorm 2" loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>Apprenticeship</h3>
-                            <a href="https://www.linkedin.com/posts/sanaullah-cs_im-thrilled-to-share-the-news-of-my-enrolment-activity-7074442881737834496-fcjb"
-                                target="_blank" class="exp-company">MindStorm Studios</a>
-                            <span class="exp-date">Jun 2023 – Sep 2023</span>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-thumb"><img src="images/Experience/colab.png" alt="Colab" loading="lazy" />
-                        </div>
-                        <div class="exp-card-body">
-                            <h3>Member</h3>
-                            <a href="https://www.instagram.com/colab.nu/p/CkNpOt6MfTT/?img_index=3" target="_blank"
-                                class="exp-company">Colab – FAST NUCES</a>
-                            <span class="exp-date">Aug 2022 – May 2023</span>
-                        </div>
-                    </div>
-                </div>
+          <div class="exp-row exp-row-reverse">
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/Offer letter AI GenMat-1.png"
+                  alt="Cloudlem Certificate"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Full Stack Developer Intern</h3>
+                <a
+                  href="https://www.linkedin.com/company/aigenmat/posts/?feedView=all"
+                  target="_blank"
+                  class="exp-company"
+                  >AI GenMat</a
+                >
+                <span class="exp-date">June 2025 – Present</span>
+              </div>
             </div>
 
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/PakTron.jpg"
+                  alt="CBO AFA"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>PKTron Quantum Ambassador</h3>
+                <a
+                  href="https://www.linkedin.com/posts/sanaullah-cs_i-am-honored-to-share-that-i-have-officially-activity-7452219145837936640-qgWY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADis3pkBUCzUGEFSJq6bqVnxQ9-A6F0PqfA"
+                  target="_blank"
+                  class="exp-company"
+                  >PakTron - AI Powered Quantum Simulator</a
+                >
+                <span class="exp-date">April 2026 – Present</span>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-thumb exp-thumb-duo">
+                <img
+                  src="images/Experience/Ambassador Card.jpeg"
+                  alt="Notion Event Lead"
+                  loading="lazy"
+                /><img
+                  src="images/Experience/Confirmation Email.jpg"
+                  alt="Build with Notion"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>SOFTEC'26 Brand Ambassador</h3>
+                <a
+                  href="https://www.linkedin.com/posts/sanaullah-cs_softec-wasnt-just-good-it-was-phenomenal-activity-7453886985703809024-Y1-j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADis3pkBUCzUGEFSJq6bqVnxQ9-A6F0PqfA"
+                  target="_blank"
+                  class="exp-company"
+                  >FAST NUCES Lahore</a
+                >
+                <span class="exp-date">Jan 2026 – April 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-connector exp-connector-left">
+            <div class="exp-conn-dot"></div>
+          </div>
+
+          <!-- Row 2: L → R -->
+
+          <div class="exp-row">
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/DE_Ta.jpg"
+                  alt="DE TA"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>TA – Differential Equations</h3>
+                <a
+                  href="https://www.linkedin.com/in/ansar-rehman-2474a0354/"
+                  target="_blank"
+                  class="exp-company"
+                  >Under Lect. Ansar Rehman</a
+                >
+                <span class="exp-date">Jan 2026 – Jun 2026</span>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-thumb exp-thumb-duo">
+                <img
+                  src="images/Experience/DevelopersHub Offer Letter.jpg"
+                  alt="Notion Event Lead"
+                  loading="lazy"
+                /><img
+                  src="images/Experience/COMPLETION CERTIFICATES.jpg"
+                  alt="Build with Notion"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Full-Stack Developer</h3>
+                <a
+                  href="https://www.linkedin.com/company/developershub-corporation/posts/?feedView=all"
+                  target="_blank"
+                  class="exp-company"
+                  >DevelopersHub Corporation</a
+                >
+                <span class="exp-date">Feb 2026 – March 2026</span>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/CBO.jpg"
+                  alt="CBO AFA"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Chief Business Officer</h3>
+                <a
+                  href="https://www.linkedin.com/posts/sanaullah-cs_im-proud-to-share-that-ive-officially-started-activity-7428162740562620416-CvIE"
+                  target="_blank"
+                  class="exp-company"
+                  >AFA Innovations</a
+                >
+                <span class="exp-date">Jan 2026 – March 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-connector exp-connector-right">
+            <div class="exp-conn-dot"></div>
+          </div>
+
+          <!-- Row 3: R → L -->
+          <div class="exp-row exp-row-reverse">
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/Cloudlem_Certificate.png"
+                  alt="Cloudlem Certificate"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>DevOps Intern</h3>
+                <a
+                  href="https://www.linkedin.com/posts/sanaullah-cs_offer-letter-activity-7398650255518588928-ggCk"
+                  target="_blank"
+                  class="exp-company"
+                  >Cloudlem Pvt. Ltd.</a
+                >
+                <span class="exp-date">Nov 2025 – Dec 2025</span>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-thumb exp-thumb-duo">
+                <img
+                  src="images/Experience/Notion.PNG"
+                  alt="Notion Event Lead"
+                  loading="lazy"
+                /><img
+                  src="images/Experience/Build with Notion.jpeg"
+                  alt="Build with Notion"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Event Management Lead</h3>
+                <a
+                  href="https://www.instagram.com/p/DUIW5AKjXwp/"
+                  target="_blank"
+                  class="exp-company"
+                  >Notion</a
+                >
+                <span class="exp-date">Nov 2025 – Jun 2026</span>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-thumb exp-thumb-duo">
+                <img
+                  src="images/Experience/Head Event Management.png"
+                  alt="Head Event Management"
+                  loading="lazy"
+                /><img
+                  src="images/Experience/FCSS donation camp.png"
+                  alt="FCSS Donation Camp"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Head of Event Management</h3>
+                <a
+                  href="https://www.instagram.com/fast_community_service_pwr/p/DU3FNBYDIcP/"
+                  target="_blank"
+                  class="exp-company"
+                  >FCSS</a
+                >
+                <span class="exp-date">Aug 2025 – Jun 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-connector exp-connector-left">
+            <div class="exp-conn-dot"></div>
+          </div>
+
+          <!-- Row 4: L → R -->
+          <div class="exp-row">
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/ta.jpeg"
+                  alt="TA FAST"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Teaching Assistant</h3>
+                <a
+                  href="https://www.linkedin.com/posts/sanaullah-cs_hamesha-der-kar-deta-huun-session-arrange-activity-7377756184000364544-eGPP"
+                  target="_blank"
+                  class="exp-company"
+                  >FAST NUCES Peshawar</a
+                >
+                <span class="exp-date">Aug 2025 – Dec 2025</span>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/nexium intern.jpeg"
+                  alt="Nexium Internship"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>AI Web Developer Intern</h3>
+                <a
+                  href="https://www.linkedin.com/posts/sanaullah-cs_ai-webdevelopment-internshipcompletion-activity-7360919017664016385-m42W"
+                  target="_blank"
+                  class="exp-company"
+                  >Nexium Ltd.</a
+                >
+                <span class="exp-date">Jul 2025 – Aug 2025</span>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/fdo.jpg"
+                  alt="Front Desk Officer"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Front Desk Officer</h3>
+                <a
+                  href="https://www.linkedin.com/posts/arsalanmateen_i-still-remember-july-24-the-day-after-nu-ugcPost-7396571202061762560-E93D"
+                  target="_blank"
+                  class="exp-company"
+                  >FAST NUCES Peshawar</a
+                >
+                <span class="exp-date">Jun 2025 – Aug 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-connector exp-connector-right">
+            <div class="exp-conn-dot"></div>
+          </div>
+
+          <!-- Row 5: R → L -->
+          <div class="exp-row exp-row-reverse">
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/TA SHIP LETTER 5 SEM.jpg"
+                  alt="TA Letter"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Teacher's Assistant – OS</h3>
+                <a
+                  href="https://www.linkedin.com/posts/sanaullah-cs_teachingassistant-operatingsystems-computerscience-activity-7237493571644207105-xmF2"
+                  target="_blank"
+                  class="exp-company"
+                  >FAST NUCES Peshawar</a
+                >
+                <span class="exp-date">Aug 2024 – Dec 2024</span>
+              </div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-thumb exp-thumb-duo">
+                <img
+                  src="images/Experience/1.jpeg"
+                  alt="MindStorm 1"
+                  loading="lazy"
+                /><img
+                  src="images/Experience/2.jpeg"
+                  alt="MindStorm 2"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Apprenticeship</h3>
+                <a
+                  href="https://www.linkedin.com/posts/sanaullah-cs_im-thrilled-to-share-the-news-of-my-enrolment-activity-7074442881737834496-fcjb"
+                  target="_blank"
+                  class="exp-company"
+                  >MindStorm Studios</a
+                >
+                <span class="exp-date">Jun 2023 – Sep 2023</span>
+              </div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-thumb">
+                <img
+                  src="images/Experience/colab.png"
+                  alt="Colab"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-card-body">
+                <h3>Member</h3>
+                <a
+                  href="https://www.instagram.com/colab.nu/p/CkNpOt6MfTT/?img_index=3"
+                  target="_blank"
+                  class="exp-company"
+                  >Colab – FAST NUCES</a
+                >
+                <span class="exp-date">Aug 2022 – May 2023</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ========== CERTIFICATES ========== -->
     <section id="certificates" class="section">
-        <div class="container">
-            <h2 class="section-title">Certificates</h2>
-            <div class="certs-grid">
-                <div class="cert-card"><img src="images/Certificates/10Pearl QA.png" alt="Quantum Enigmas"
-                        loading="lazy" />
-                    <div class="cert-label">QA Fundamentals</div>
-                </div>
-                <div class="cert-card"><img src="images/Certificates/quantum-enigmas.png" alt="Quantum Enigmas"
-                        loading="lazy" />
-                    <div class="cert-label">Quantum Enigmas</div>
-                </div>
-
-                <div class="cert-card"><img src="images/Certificates/QBronze181-20.jpg" alt="QBronze181 Diploma"
-                        loading="lazy" />
-                    <div class="cert-label">QBronze181 Diploma</div>
-                </div>
-
-                <div class="cert-card"><img src="images/Certificates/IQM Quantum School.jpg"
-                        alt="IQM Quantum Winter School" loading="lazy" />
-                    <div class="cert-label">IQM Quantum Winter School</div>
-                </div>
-                <div class="cert-card"><img
-                        src="images/Certificates/Mathematical Foundations and Quantum Mechanics Essentials.jpeg"
-                        alt="Mathematical Foundations" loading="lazy" />
-                    <div class="cert-label">Mathematical Foundations & Quantum Mechanics</div>
-                </div>
-                <div class="cert-card"><img src="images/Certificates/Hugging Face.png" alt="Hugging Face"
-                        loading="lazy" />
-                    <div class="cert-label">Open Source Models – Hugging Face</div>
-                </div>
-                <div class="cert-card"><img src="images/Certificates/docker.jpg" alt="MicroServices Docker"
-                        loading="lazy" />
-                    <div class="cert-label">MicroServices with Docker</div>
-                </div>
-
-
-                <div class="cert-card"><img src="images/Certificates/Introduction to Software Engineering.png"
-                        alt="Introduction to Software Engineering" loading="lazy" />
-                    <div class="cert-label">Introduction to Software Engineering</div>
-                </div>
-
-                <div class="cert-card"><img src="images/Certificates/GCSPC.PNG" alt="Google Cybersecurity"
-                        loading="lazy" />
-                    <div class="cert-label">Google Cybersecurity</div>
-                </div>
-                <div class="cert-card"><img src="images/Certificates/carbon.jpg" alt="Google Carbon" loading="lazy" />
-                    <div class="cert-label">Google Carbon</div>
-                </div>
-                <div class="cert-card"><img src="images/Certificates/Certificate.jpg" alt="Past Present Future Data"
-                        loading="lazy" />
-                    <div class="cert-label">Past, Present & Future with Data</div>
-                </div>
-                <div class="cert-card"><img src="images/Certificates/Participation Certificate in Webinar.jpg"
-                        alt="Career Crafters Webinar" loading="lazy" />
-                    <div class="cert-label">Career Crafters Internship Webinar</div>
-                </div>
-                <div class="cert-card"><img src="images/Certificates/Certificate for C++.jpg" alt="C/C++"
-                        loading="lazy" />
-                    <div class="cert-label">Getting Started With C/C++</div>
-                </div>
-                <div class="cert-card"><img src="images/Certificates/Robotics BootCamp.jpg" alt="Robotics Bootcamp"
-                        loading="lazy" />
-                    <div class="cert-label">Hands-On Workshop on Robotics Bootcamp</div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <img
+              src="images/Certificates/10Pearl QA.png"
+              alt="Quantum Enigmas"
+              loading="lazy"
+            />
+            <div class="cert-label">QA Fundamentals</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/quantum-enigmas.png"
+              alt="Quantum Enigmas"
+              loading="lazy"
+            />
+            <div class="cert-label">Quantum Enigmas</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/IQM Quantum School.jpg"
+              alt="IQM Quantum Winter School"
+              loading="lazy"
+            />
+            <div class="cert-label">IQM Quantum Winter School</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/Mathematical Foundations and Quantum Mechanics Essentials.jpeg"
+              alt="Mathematical Foundations"
+              loading="lazy"
+            />
+            <div class="cert-label">
+              Mathematical Foundations & Quantum Mechanics
             </div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/Hugging Face.png"
+              alt="Hugging Face"
+              loading="lazy"
+            />
+            <div class="cert-label">Open Source Models – Hugging Face</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/docker.jpg"
+              alt="MicroServices Docker"
+              loading="lazy"
+            />
+            <div class="cert-label">MicroServices with Docker</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/GCSPC.PNG"
+              alt="Google Cybersecurity"
+              loading="lazy"
+            />
+            <div class="cert-label">Google Cybersecurity</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/carbon.jpg"
+              alt="Google Carbon"
+              loading="lazy"
+            />
+            <div class="cert-label">Google Carbon</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/Certificate.jpg"
+              alt="Past Present Future Data"
+              loading="lazy"
+            />
+            <div class="cert-label">Past, Present & Future with Data</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/Participation Certificate in Webinar.jpg"
+              alt="Career Crafters Webinar"
+              loading="lazy"
+            />
+            <div class="cert-label">Career Crafters Internship Webinar</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/Certificate for C++.jpg"
+              alt="C/C++"
+              loading="lazy"
+            />
+            <div class="cert-label">Getting Started With C/C++</div>
+          </div>
+          <div class="cert-card">
+            <img
+              src="images/Certificates/Robotics BootCamp.jpg"
+              alt="Robotics Bootcamp"
+              loading="lazy"
+            />
+            <div class="cert-label">Hands-On Workshop on Robotics Bootcamp</div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ========== HIGHLIGHTS ========== -->
     <section id="highlights" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Highlights</h2>
-            <div class="highlights-grid">
-
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/Special Education Complex Visit.jpg" alt="Tech Fusion 4.0"
-                            loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Special Education Complex Visit</h3>
-                        <span class="hl-year">2026</span>
-                    </div>
-                </div>
-
-
-
-                <div class="highlight-card">
-                    <div class="hl-imgs hl-carousel" data-slide="0">
-                        <img src="images/Highlights/SOFTEC26_Certificate_Sanaullah-1.png" alt="Trillet Hackathon 1"
-                            loading="lazy" class="hl-slide active" />
-                        <img src="images/Highlights/2.jpeg" alt="Trillet Hackathon 2" loading="lazy" class="hl-slide" />
-                        <div class="hl-carousel-dots">
-                            <button class="hl-dot active" data-index="0" aria-label="Slide 1"></button>
-                            <button class="hl-dot" data-index="1" aria-label="Slide 2"></button>
-                        </div>
-                        <button class="hl-carousel-btn hl-prev" aria-label="Previous"><i
-                                class="fas fa-chevron-left"></i></button>
-                        <button class="hl-carousel-btn hl-next" aria-label="Next"><i
-                                class="fas fa-chevron-right"></i></button>
-                    </div>
-
-                    <div class="hl-info">
-                        <h3>SOFTEC'26 Participant</h3>
-                        <span class="hl-year">2026</span>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/PrAIsm.png" alt="Tech Fusion 4.0" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Team Dinner - AFA Innovation</h3>
-                        <span class="hl-year">2026</span>
-                    </div>
-                </div>
-
-
-
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/ramzan Drive.png" alt="Tech Fusion 4.0" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Ramzan Drive</h3>
-                        <span class="hl-year">2026</span>
-                    </div>
-                </div>
-
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/Notion Community Launch Event.jpg" alt="Tech Fusion 4.0"
-                            loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Notion Community Launch Event</h3>
-                        <span class="hl-year">2026</span>
-                    </div>
-                </div>
-
-
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/blood donation.jpg" alt="Tech Fusion 4.0" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Blood Donation Camp </h3>
-                        <span class="hl-year">2026</span>
-                    </div>
-                </div>
-
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/Fusion Fest 4.0.jpeg" alt="Tech Fusion 4.0" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Tech Fusion 4.0</h3>
-                        <span class="hl-year">Virtual · 2026</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/RAG with Vertex AI.png" alt="RAG with Vertex AI" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>RAG with Vertex AI</h3>
-                        <span class="hl-year">Virtual · 2026</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/DevFest.png" alt="DevFest" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>DevFest</h3>
-                        <span class="hl-year">IMSciences Peshawar · 2025</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/FPSC.jpg" alt="FPSC Coding Competition" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>FPSC Coding Competition</h3>
-                        <span class="hl-year">2025</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/emumba.jpg" alt="Emumba Industry Visit" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Emumba Industry Visit</h3>
-                        <span class="hl-year">2025</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs hl-carousel" data-slide="0">
-                        <img src="images/Highlights/special school.jpg" alt="FYP Special Education" loading="lazy"
-                            class="hl-slide active" />
-                        <img src="images/Highlights/complex.jpg" alt="FYP Complex" loading="lazy" class="hl-slide" />
-                        <div class="hl-carousel-dots">
-                            <button class="hl-dot active" data-index="0" aria-label="Slide 1"></button>
-                            <button class="hl-dot" data-index="1" aria-label="Slide 2"></button>
-                        </div>
-                        <button class="hl-carousel-btn hl-prev" aria-label="Previous"><i
-                                class="fas fa-chevron-left"></i></button>
-                        <button class="hl-carousel-btn hl-next" aria-label="Next"><i
-                                class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="hl-info">
-                        <h3>FYP – Special Education Complex</h3>
-                        <span class="hl-year">2025</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/stall.jpg" alt="Nutec 25 Stall" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Nutec '25 Stall Setup</h3>
-                        <span class="hl-year">2025</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/imscience google workshop.jpg" alt="TTS Workshop" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Text-to-Spec Generator Workshop</h3>
-                        <span class="hl-year">2025</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs hl-carousel" data-slide="0">
-                        <img src="images/Highlights/Trillet.jpg" alt="Trillet Hackathon 1" loading="lazy"
-                            class="hl-slide active" />
-                        <img src="images/Highlights/Trillet 2.jpg" alt="Trillet Hackathon 2" loading="lazy"
-                            class="hl-slide" />
-                        <div class="hl-carousel-dots">
-                            <button class="hl-dot active" data-index="0" aria-label="Slide 1"></button>
-                            <button class="hl-dot" data-index="1" aria-label="Slide 2"></button>
-                        </div>
-                        <button class="hl-carousel-btn hl-prev" aria-label="Previous"><i
-                                class="fas fa-chevron-left"></i></button>
-                        <button class="hl-carousel-btn hl-next" aria-label="Next"><i
-                                class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="hl-info">
-                        <h3>Trillet AI Hackathon</h3>
-                        <span class="hl-year">2025</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/medal.jpg" alt="Bronze Medalist" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>🥉 Bronze Medalist</h3>
-                        <span class="hl-year">2023</span>
-                    </div>
-                </div>
-
-                <div class="highlight-card">
-                    <div class="hl-imgs">
-                        <img src="images/Highlights/Game Jam.jpg" alt="Rookie Game Jam" loading="lazy" />
-                    </div>
-                    <div class="hl-info">
-                        <h3>Rookie GameJam Participant</h3>
-                        <span class="hl-year">2023</span>
-                    </div>
-                </div>
-
+      <div class="container">
+        <h2 class="section-title">Highlights</h2>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/Special Education Complex Visit.jpg"
+                alt="Tech Fusion 4.0"
+                loading="lazy"
+              />
             </div>
+            <div class="hl-info">
+              <h3>Special Education Complex Visit</h3>
+              <span class="hl-year">2026</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs hl-carousel" data-slide="0">
+              <img
+                src="images/Highlights/SOFTEC26_Certificate_Sanaullah-1.png"
+                alt="Trillet Hackathon 1"
+                loading="lazy"
+                class="hl-slide active"
+              />
+              <img
+                src="images/Highlights/2.jpeg"
+                alt="Trillet Hackathon 2"
+                loading="lazy"
+                class="hl-slide"
+              />
+              <div class="hl-carousel-dots">
+                <button
+                  class="hl-dot active"
+                  data-index="0"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  class="hl-dot"
+                  data-index="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <button class="hl-carousel-btn hl-prev" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="hl-carousel-btn hl-next" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="hl-info">
+              <h3>SOFTEC'26 Participant</h3>
+              <span class="hl-year">2026</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/PrAIsm.png"
+                alt="Tech Fusion 4.0"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Team Dinner - AFA Innovation</h3>
+              <span class="hl-year">2026</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/ramzan Drive.png"
+                alt="Tech Fusion 4.0"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Ramzan Drive</h3>
+              <span class="hl-year">2026</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/Notion Community Launch Event.jpg"
+                alt="Tech Fusion 4.0"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Notion Community Launch Event</h3>
+              <span class="hl-year">2026</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/blood donation.jpg"
+                alt="Tech Fusion 4.0"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Blood Donation Camp</h3>
+              <span class="hl-year">2026</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/Fusion Fest 4.0.jpeg"
+                alt="Tech Fusion 4.0"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Tech Fusion 4.0</h3>
+              <span class="hl-year">Virtual · 2026</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/RAG with Vertex AI.png"
+                alt="RAG with Vertex AI"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>RAG with Vertex AI</h3>
+              <span class="hl-year">Virtual · 2026</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/DevFest.png"
+                alt="DevFest"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>DevFest</h3>
+              <span class="hl-year">IMSciences Peshawar · 2025</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/FPSC.jpg"
+                alt="FPSC Coding Competition"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>FPSC Coding Competition</h3>
+              <span class="hl-year">2025</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/emumba.jpg"
+                alt="Emumba Industry Visit"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Emumba Industry Visit</h3>
+              <span class="hl-year">2025</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs hl-carousel" data-slide="0">
+              <img
+                src="images/Highlights/special school.jpg"
+                alt="FYP Special Education"
+                loading="lazy"
+                class="hl-slide active"
+              />
+              <img
+                src="images/Highlights/complex.jpg"
+                alt="FYP Complex"
+                loading="lazy"
+                class="hl-slide"
+              />
+              <div class="hl-carousel-dots">
+                <button
+                  class="hl-dot active"
+                  data-index="0"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  class="hl-dot"
+                  data-index="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <button class="hl-carousel-btn hl-prev" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="hl-carousel-btn hl-next" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="hl-info">
+              <h3>FYP – Special Education Complex</h3>
+              <span class="hl-year">2025</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/stall.jpg"
+                alt="Nutec 25 Stall"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Nutec '25 Stall Setup</h3>
+              <span class="hl-year">2025</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/imscience google workshop.jpg"
+                alt="TTS Workshop"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Text-to-Spec Generator Workshop</h3>
+              <span class="hl-year">2025</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs hl-carousel" data-slide="0">
+              <img
+                src="images/Highlights/Trillet.jpg"
+                alt="Trillet Hackathon 1"
+                loading="lazy"
+                class="hl-slide active"
+              />
+              <img
+                src="images/Highlights/Trillet 2.jpg"
+                alt="Trillet Hackathon 2"
+                loading="lazy"
+                class="hl-slide"
+              />
+              <div class="hl-carousel-dots">
+                <button
+                  class="hl-dot active"
+                  data-index="0"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  class="hl-dot"
+                  data-index="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <button class="hl-carousel-btn hl-prev" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="hl-carousel-btn hl-next" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="hl-info">
+              <h3>Trillet AI Hackathon</h3>
+              <span class="hl-year">2025</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/medal.jpg"
+                alt="Bronze Medalist"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>🥉 Bronze Medalist</h3>
+              <span class="hl-year">2023</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="hl-imgs">
+              <img
+                src="images/Highlights/Game Jam.jpg"
+                alt="Rookie Game Jam"
+                loading="lazy"
+              />
+            </div>
+            <div class="hl-info">
+              <h3>Rookie GameJam Participant</h3>
+              <span class="hl-year">2023</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ========== CONTACT ========== -->
     <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-sub">I'm always open to new opportunities, collaborations, or just a friendly chat. Feel
-                free to reach out!</p>
-            <div class="contact-grid">
-                <div class="contact-cards">
-                    <a href="mailto:sanaullahofficial04@gmail.com" class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email Me</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sana-ullah-389532226/" target="_blank" class="contact-card">
-                        <i class="fab fa-linkedin-in"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/SanaUllah04" target="_blank" class="contact-card">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://x.com/MrWarden04" target="_blank" class="contact-card">
-                        <i class="fab fa-x-twitter"></i>
-                        <span>Twitter / X</span>
-                    </a>
-                    <a href="https://www.instagram.com/sanaullah.here/" target="_blank" class="contact-card">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1QUMjG0ZGREBOOjzZJ-EPeZZR1xDverjm/view?usp=sharing"
-                        target="_blank" class="contact-card">
-                        <i class="fas fa-file-alt"></i>
-                        <span>View CV</span>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1lS1LLoqzd4Jv23dRztq7Y6I-RjGYOqMo/view?usp=sharing"
-                        target="_blank" class="contact-card resume-card">
-                        <i class="fas fa-file-pdf"></i>
-                        <span>View Resume</span>
-                    </a>
-
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-sub">
+          I'm always open to new opportunities, collaborations, or just a
+          friendly chat. Feel free to reach out!
+        </p>
+        <div class="contact-grid">
+          <div class="contact-cards">
+            <a href="mailto:sanaullahofficial04@gmail.com" class="contact-card">
+              <i class="fas fa-envelope"></i>
+              <span>Email Me</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sana-ullah-389532226/"
+              target="_blank"
+              class="contact-card"
+            >
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/SanaUllah04"
+              target="_blank"
+              class="contact-card"
+            >
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://x.com/MrWarden04"
+              target="_blank"
+              class="contact-card"
+            >
+              <i class="fab fa-x-twitter"></i>
+              <span>Twitter / X</span>
+            </a>
+            <a
+              href="https://www.instagram.com/sanaullah.here/"
+              target="_blank"
+              class="contact-card"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1QUMjG0ZGREBOOjzZJ-EPeZZR1xDverjm/view?usp=sharing"
+              target="_blank"
+              class="contact-card"
+            >
+              <i class="fas fa-file-alt"></i>
+              <span>View CV</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1lS1LLoqzd4Jv23dRztq7Y6I-RjGYOqMo/view?usp=sharing"
+              target="_blank"
+              class="contact-card resume-card"
+            >
+              <i class="fas fa-file-pdf"></i>
+              <span>View Resume</span>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ========== LIGHTBOX ========== -->
     <div id="lightbox" class="lightbox">
-        <button class="lightbox-close" aria-label="Close">&times;</button>
-        <img id="lightbox-img" src="" alt="Full view" />
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" src="" alt="Full view" />
     </div>
 
     <!-- ========== FOOTER ========== -->
     <footer id="footer">
-        <div class="container">
-            <p class="footer-text">
-                Crafted with <span class="footer-heart">♥</span> by <span class="accent">SanaUllah</span> &nbsp;·&nbsp;
-                Graduate of Bachelor in Computer Science from NUCES-FAST Peshawar
-            </p>
-            <p class="footer-copy">© 2026 SanaUllah · All Rights Reserved</p>
-        </div>
+      <div class="container">
+        <p class="footer-text">
+          Crafted with <span class="footer-heart">♥</span> by
+          <span class="accent">SanaUllah</span> &nbsp;·&nbsp; Graduate of
+          Bachelor in Computer Science from NUCES-FAST Peshawar
+        </p>
+        <p class="footer-copy">© 2026 SanaUllah · All Rights Reserved</p>
+      </div>
     </footer>
 
     <!-- Back to Top -->
-    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script>
-        // ---- Cursor Spotlight ----
-        const spotlight = document.getElementById('cursor-spotlight');
-        let spotX = window.innerWidth / 2, spotY = window.innerHeight / 2;
-        let currX = spotX, currY = spotY;
-        document.addEventListener('mousemove', e => { spotX = e.clientX; spotY = e.clientY; });
-        (function animateSpotlight() {
-            currX += (spotX - currX) * 0.08;
-            currY += (spotY - currY) * 0.08;
-            spotlight.style.left = currX + 'px';
-            spotlight.style.top = currY + 'px';
-            requestAnimationFrame(animateSpotlight);
-        })();
+      // ---- Theme Toggle ----
+      const themeToggle = document.getElementById("theme-toggle");
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      } else if (prefersDark) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+      themeToggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
 
-        // ---- Typed text effect ----
-        const roles = ["Full-Stack AI Engineer", "DevOps & Cloud Engineer", "CS Graduate"];
-        let rolei = 0, chari = 0, deleting = false;
-        const typedEl = document.getElementById('typed-text');
-        function type() {
-            const cur = roles[rolei];
-            if (!deleting) {
-                typedEl.textContent = cur.slice(0, ++chari);
-                if (chari === cur.length) { deleting = true; setTimeout(type, 1600); return; }
-            } else {
-                typedEl.textContent = cur.slice(0, --chari);
-                if (chari === 0) { deleting = false; rolei = (rolei + 1) % roles.length; }
+      // ---- Typed text effect ----
+      const roles = [
+        "Full-Stack AI Engineer",
+        "DevOps & Cloud Engineer",
+        "CS Graduate",
+      ];
+      let rolei = 0,
+        chari = 0,
+        deleting = false;
+      const typedEl = document.getElementById("typed-text");
+      function type() {
+        const cur = roles[rolei];
+        if (!deleting) {
+          typedEl.textContent = cur.slice(0, ++chari);
+          if (chari === cur.length) {
+            deleting = true;
+            setTimeout(type, 1600);
+            return;
+          }
+        } else {
+          typedEl.textContent = cur.slice(0, --chari);
+          if (chari === 0) {
+            deleting = false;
+            rolei = (rolei + 1) % roles.length;
+          }
+        }
+        setTimeout(type, deleting ? 55 : 95);
+      }
+      type();
+
+      // ---- Animated counters for stat cards ----
+      function animateCounter(el, target, suffix) {
+        let start = 0,
+          duration = 1600;
+        let startTime = null;
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          let progress = Math.min((ts - startTime) / duration, 1);
+          let ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(ease * target) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+      const statObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              const el = e.target.querySelector(".stat-num");
+              if (el && !el.dataset.animated) {
+                el.dataset.animated = "1";
+                const raw = el.textContent.trim();
+                const suffix = raw.replace(/[0-9]/g, "");
+                const num = parseInt(raw);
+                if (!isNaN(num)) animateCounter(el, num, suffix);
+              }
             }
-            setTimeout(type, deleting ? 55 : 95);
-        }
-        type();
+          });
+        },
+        { threshold: 0.5 },
+      );
+      document
+        .querySelectorAll(".stat-card")
+        .forEach((c) => statObserver.observe(c));
 
-        // ---- Animated counters for stat cards ----
-        function animateCounter(el, target, suffix) {
-            let start = 0, duration = 1600;
-            let startTime = null;
-            function step(ts) {
-                if (!startTime) startTime = ts;
-                let progress = Math.min((ts - startTime) / duration, 1);
-                let ease = 1 - Math.pow(1 - progress, 3);
-                el.textContent = Math.floor(ease * target) + suffix;
-                if (progress < 1) requestAnimationFrame(step);
+      // ---- Sticky Navbar ----
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+      });
+
+      // ---- Active nav link highlight ----
+      const sections = document.querySelectorAll("section[id]");
+      const navItems = document.querySelectorAll(".nav-item");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              navItems.forEach((a) => a.classList.remove("active"));
+              const active = document.querySelector(
+                `.nav-item[href="#${e.target.id}"]`,
+              );
+              if (active) active.classList.add("active");
             }
-            requestAnimationFrame(step);
-        }
-        const statObserver = new IntersectionObserver(entries => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    const el = e.target.querySelector('.stat-num');
-                    if (el && !el.dataset.animated) {
-                        el.dataset.animated = "1";
-                        const raw = el.textContent.trim();
-                        const suffix = raw.replace(/[0-9]/g, '');
-                        const num = parseInt(raw);
-                        if (!isNaN(num)) animateCounter(el, num, suffix);
-                    }
-                }
-            });
-        }, { threshold: 0.5 });
-        document.querySelectorAll('.stat-card').forEach(c => statObserver.observe(c));
+          });
+        },
+        { threshold: 0.3 },
+      );
+      sections.forEach((s) => observer.observe(s));
 
-        // ---- Sticky Navbar ----
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
+      // ---- Hamburger menu ----
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        hamburger.classList.toggle("active");
+      });
+      navLinks.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          hamburger.classList.remove("active");
+        }),
+      );
 
-        // ---- Active nav link highlight ----
-        const sections = document.querySelectorAll('section[id]');
-        const navItems = document.querySelectorAll('.nav-item');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    navItems.forEach(a => a.classList.remove('active'));
-                    const active = document.querySelector(`.nav-item[href="#${e.target.id}"]`);
-                    if (active) active.classList.add('active');
-                }
-            });
-        }, { threshold: 0.3 });
-        sections.forEach(s => observer.observe(s));
+      // ---- Back to top ----
+      const btt = document.getElementById("back-to-top");
+      window.addEventListener("scroll", () =>
+        btt.classList.toggle("visible", window.scrollY > 400),
+      );
+      btt.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
 
-        // ---- Hamburger menu ----
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-            hamburger.classList.toggle('active');
-        });
-        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-            navLinks.classList.remove('open');
-            hamburger.classList.remove('active');
-        }));
-
-        // ---- Back to top ----
-        const btt = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 400));
-        btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-        // ---- Scroll reveal ----
-        const revealEls = document.querySelectorAll('.project-card, .exp-card, .cert-card, .highlight-card, .stat-card, .skill-category, .contact-card');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); } });
-        }, { threshold: 0.08 });
-        revealEls.forEach(el => { el.classList.add('reveal'); revealObserver.observe(el); });
-
-        // ---- Reading Progress Bar ----
-        const progressBar = document.createElement('div');
-        progressBar.id = 'progress-bar';
-        document.body.prepend(progressBar);
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
-            const max = document.body.scrollHeight - window.innerHeight;
-            progressBar.style.width = Math.min((scrolled / max) * 100, 100) + '%';
-        });
-
-        // ---- Hero Particle Canvas ----
-        const hero = document.getElementById('hero');
-        const canvas = document.createElement('canvas');
-        canvas.id = 'hero-canvas';
-        canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.5;';
-        hero.appendChild(canvas);
-
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-
-        function resizeCanvas() {
-            canvas.width = hero.offsetWidth;
-            canvas.height = hero.offsetHeight;
-        }
-        resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
-
-        function Particle() {
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 1.5 + 0.3;
-            this.speedX = (Math.random() - 0.5) * 0.3;
-            this.speedY = (Math.random() - 0.5) * 0.3;
-            this.opacity = Math.random() * 0.5 + 0.1;
-            this.color = Math.random() > 0.7 ? '188,140,255' : '88,166,255';
-        }
-
-        function initParticles() {
-            const count = Math.floor((canvas.width * canvas.height) / 14000);
-            particles = Array.from({ length: count }, () => new Particle());
-        }
-
-        function animateParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(${p.color},${p.opacity})`;
-                ctx.fill();
-                p.x += p.speedX;
-                p.y += p.speedY;
-                if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
-                if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
-            });
-            requestAnimationFrame(animateParticles);
-        }
-
-        initParticles();
-        animateParticles();
-        window.addEventListener('resize', initParticles);
-
-        // ---- Highlight Carousels ----
-        document.querySelectorAll('.hl-carousel').forEach(carousel => {
-            const slides = carousel.querySelectorAll('.hl-slide');
-            const dots = carousel.querySelectorAll('.hl-dot');
-            const prevBtn = carousel.querySelector('.hl-prev');
-            const nextBtn = carousel.querySelector('.hl-next');
-            let current = 0;
-            let autoTimer;
-
-            function goTo(idx) {
-                slides[current].classList.remove('active');
-                dots[current].classList.remove('active');
-                current = (idx + slides.length) % slides.length;
-                slides[current].classList.add('active');
-                dots[current].classList.add('active');
+      // ---- Scroll reveal ----
+      const revealEls = document.querySelectorAll(
+        ".project-card, .exp-card, .cert-card, .highlight-card, .stat-card, .skill-category, .contact-card",
+      );
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("revealed");
+              revealObserver.unobserve(e.target);
             }
+          });
+        },
+        { threshold: 0.08 },
+      );
+      revealEls.forEach((el) => {
+        el.classList.add("reveal");
+        revealObserver.observe(el);
+      });
 
-            function startAuto() {
-                autoTimer = setInterval(() => goTo(current + 1), 4000);
-            }
-            function resetAuto() {
-                clearInterval(autoTimer);
-                startAuto();
-            }
+      // ---- Reading Progress Bar ----
+      const progressBar = document.createElement("div");
+      progressBar.id = "progress-bar";
+      document.body.prepend(progressBar);
+      window.addEventListener("scroll", () => {
+        const scrolled = window.scrollY;
+        const max = document.body.scrollHeight - window.innerHeight;
+        progressBar.style.width = Math.min((scrolled / max) * 100, 100) + "%";
+      });
 
-            prevBtn.addEventListener('click', (e) => { e.stopPropagation(); goTo(current - 1); resetAuto(); });
-            nextBtn.addEventListener('click', (e) => { e.stopPropagation(); goTo(current + 1); resetAuto(); });
-            dots.forEach(dot => dot.addEventListener('click', (e) => { e.stopPropagation(); goTo(+dot.dataset.index); resetAuto(); }));
+      // ---- Highlight Carousels ----
+      document.querySelectorAll(".hl-carousel").forEach((carousel) => {
+        const slides = carousel.querySelectorAll(".hl-slide");
+        const dots = carousel.querySelectorAll(".hl-dot");
+        const prevBtn = carousel.querySelector(".hl-prev");
+        const nextBtn = carousel.querySelector(".hl-next");
+        let current = 0;
+        let autoTimer;
 
-            startAuto();
-        });
-
-        // ---- Lightbox for all images (except hero avatar) ----
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxClose = lightbox.querySelector('.lightbox-close');
-
-        document.querySelectorAll('img:not(#hero-avatar)').forEach(img => {
-            if (img.closest('#lightbox') || img.closest('#hero-canvas')) return;
-            img.style.cursor = 'zoom-in';
-            img.addEventListener('click', (e) => {
-                e.stopPropagation();
-                lightboxImg.src = img.src;
-                lightboxImg.alt = img.alt;
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
+        function goTo(idx) {
+          slides[current].classList.remove("active");
+          dots[current].classList.remove("active");
+          current = (idx + slides.length) % slides.length;
+          slides[current].classList.add("active");
+          dots[current].classList.add("active");
         }
-        lightboxClose.addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+        function startAuto() {
+          autoTimer = setInterval(() => goTo(current + 1), 4000);
+        }
+        function resetAuto() {
+          clearInterval(autoTimer);
+          startAuto();
+        }
+
+        prevBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          goTo(current - 1);
+          resetAuto();
+        });
+        nextBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          goTo(current + 1);
+          resetAuto();
+        });
+        dots.forEach((dot) =>
+          dot.addEventListener("click", (e) => {
+            e.stopPropagation();
+            goTo(+dot.dataset.index);
+            resetAuto();
+          }),
+        );
+
+        startAuto();
+      });
+
+      // ---- Lightbox for all images (except hero avatar) ----
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxClose = lightbox.querySelector(".lightbox-close");
+
+      document.querySelectorAll("img:not(#hero-avatar)").forEach((img) => {
+        if (img.closest("#lightbox") || img.closest("#hero-canvas")) return;
+        img.style.cursor = "zoom-in";
+        img.addEventListener("click", (e) => {
+          e.stopPropagation();
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightbox.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+      lightboxClose.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
